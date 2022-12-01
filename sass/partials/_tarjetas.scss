@@ -1,0 +1,230 @@
+.producto{
+    max-width: 280px;
+    max-height: 500px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 6px;
+    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+}
+.divProducto{
+    display: grid;
+}
+.producto:hover{
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
+}
+.porducto > img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.informacion{
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+
+}
+.informacion * + *{
+    margin-bottom: 1em;
+}
+.tipo-envio{
+    background-color: rgb(52, 131,250);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    max-width: max-content;
+    padding: 0 0.2em;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+.precio{
+    font-size: 1.5em;
+}
+.precio-envio{
+    color: rgb(0, 166, 80);
+}
+.descripcion{
+    font-weight: 300;
+}
+.precio-envio, .descripcion{
+    font-size: 0.9em;
+}
+.cont{
+    display: grid;
+    margin-top: 50px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+}
+.cardH2{
+    margin-top: 100px;
+}
+.cardContainer{
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.marcasH2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.marcas{
+    list-style: none;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+
+
+@media (min-width: 768px){
+    .producto{
+    max-width: 280px;
+    max-height: 500px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 6px;
+    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+}
+.cardH2{
+    margin-top: 100px;
+}
+.marcas{
+    display: flex;
+    margin-bottom: 50px;
+    .li{
+        list-style: none;
+    }
+}
+.marcasH2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cont{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;   
+    justify-content: space-around;
+}
+.divProducto{
+    display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.producto:hover{
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
+}
+.porducto > img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.informacion{
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+
+}
+.informacion * + *{
+    margin-bottom: 1em;
+}
+.tipo-envio{
+    background-color: rgb(52, 131,250);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    max-width: max-content;
+    padding: 0 0.2em;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+.precio{
+    font-size: 1.5em;
+}
+.precio-envio{
+    color: rgb(0, 166, 80);
+}
+.descripcion{
+    font-weight: 300;
+}
+.precio-envio, .descripcion{
+    font-size: 0.9em;
+}}
+.sobre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.sobre figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+.sobre.img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(184, 238, 238, 0.904);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.sobre figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.sobre figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.sobre figure:hover >img{
+    transform: scale(1.3);
+}
+.sobre figure .capa h3{
+    color: black;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.sobre figure .capa p{
+    color: black;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+
+}

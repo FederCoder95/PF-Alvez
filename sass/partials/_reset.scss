@@ -1,0 +1,196 @@
+@media (min-width: 768px){
+    
+
+    *{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    
+    }
+    .cardContainer{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+    .body_nav{
+    width: 100%;
+    height: 100%;
+    }
+
+    .backgroundtop{
+        height: 130px;
+        width: 130px;
+    }
+    .img.Galeria{
+        width: 50px;
+        height: 50px;
+    }
+    .backgroundtop{
+        display: flex;
+        justify-content: left;
+        justify-items: center;
+    }
+    
+    .logoPrincipal{
+        height: 75px;
+        width: 175px;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    .imgHeaderNav{ 
+        width: 150px;
+        height: 150px;
+        position: center;
+    }
+    .centro_pag{
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-self: center;
+        margin-top: 30px;
+    }
+    .h2Main{
+        margin-bottom: 50px;
+        justify-content: center;
+        justify-items: center;
+        margin-left: 100px;
+        color: blue;
+    }
+    li{ 
+        list-style: none;
+        margin-left: 100px;
+    }
+    a{
+        text-decoration: none;
+        color:white ;
+    }
+    button{
+        align-items: center;
+        margin-left: 50px;
+        ;
+    }
+    h1{
+        height: 100px;
+        width: 100vw;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .img_princial{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        height: auto;
+    
+    }
+    .mainSection{
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+    }
+    .mMain{
+        margin-top: 100px;
+    }
+    
+    .sectionConteiner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: #2D3142 ;
+        margin-bottom: 50px;
+        border-bottom: powderblue;
+    }
+    .articleConteiner{
+        overflow-y: hidden;
+        overflow-x: hidden;
+        justify-content: center;
+        justify-items: center;
+    }
+    h5{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    footer{
+        background-color: #B0D7FF;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .imgFooter{
+        width: 30px;
+        height: 30px;
+    }
+    .sobreNosotrosDiv{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    #form {
+        border:1px solid #990000;
+        width:450px;
+        margin:auto;
+    }
+    #form legend{
+        font-weight:bold;
+        font-size:12px;
+    }
+    #form ol{
+        list-style:none;
+    }
+    #form ol li{
+        padding-bottom:5px;
+    }
+    #form ol li label{
+        width:120px;
+        float:left;
+        text-align:left;
+    }
+    #form input[type=text] {
+        border:1px solid #CCCCCC;
+    }
+    #form input.btn {
+        padding:3px;
+        color:#FFFFFF;
+        background-color:#990000;
+        border:1px solid #000000;
+    }
+    .pruductos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    .productoImg{
+        height: 200px;
+        width: 200px;
+    }
+    .img_princial{
+        height: 100%;
+        width: 100%;
+    }
+    .articleConteiner{
+        border: 1px solid red;
+        display: grid;
+    }
+    .sobreNosotrosDiv{
+        margin-top: 50px;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        
+    }
+    .productos{
+        margin-top: 50px;
+    }
+}
